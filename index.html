@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fidel Owiti | Speak to Lead, Public Speaking Coach, Nairobi</title>
+  <meta name="description" content="Fidel Owiti is a public speaking coach, author, and founder of Speak to Lead. Helping professionals and leaders communicate with clarity, confidence, and impact.">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <meta property="og:title" content="Fidel Owiti | Speak to Lead, Public Speaking Coach, Nairobi">
+  <meta property="og:description" content="Kenya's leading public speaking coach and keynote speaker. Helping professionals and leaders communicate with clarity, confidence, and impact.">
+  <meta property="og:image" content="https://fowiti76.github.io/logo.jpg">
+  <meta property="og:url" content="https://fowiti76.github.io">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --navy:#1B2F5E; --navy-dk:#111E3D; --gold:#C9A84C; --gold-lt:#DFC070;
+      --burgundy:#800000; --cream:#FAF6EE; --dark:#0E1628; --gray:#5A6478; --white:#FFFFFF;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;color:var(--dark);background:var(--white);overflow-x:hidden;}
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(14,22,40,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(201,168,76,0.2); padding: 0 48px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-logo-img { height: 46px; width: 46px; border-radius: 50%; object-fit: cover; border: 1.5px solid rgba(201,168,76,0.5); }
+    .nav-name { font-size: 13px; letter-spacing: 0; color: var(--white); font-weight: 500; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .nav-cta { background: var(--gold) !important; color: var(--dark) !important; padding: 10px 18px !important; font-weight: 600 !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--white); display: block; transition: all 0.3s; }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+    .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; z-index: 99; background: rgba(14,22,40,0.99); flex-direction: column; padding: 16px 24px 28px; border-bottom: 2px solid rgba(201,168,76,0.3); }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 16px; padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,0.06); transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu .mobile-cta { background: var(--gold); color: var(--dark); text-align: center; padding: 14px; font-weight: 700; margin-top: 12px; border: none; }
+    /* FOOTER */
+    footer { background: var(--dark); padding: 56px 48px 32px; border-top: 1px solid rgba(201,168,76,0.15); }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+    .footer-logo { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 1.5px solid rgba(201,168,76,0.4); margin-bottom: 16px; display: block; }
+    .footer-brand-name { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); font-weight: 700; margin-bottom: 10px; }
+    .footer-brand-sub { font-size: 13px; color: rgba(255,255,255,0.35); line-height: 1.7; margin-bottom: 24px; }
+    .footer-social { display: flex; gap: 10px; flex-wrap: wrap; }
+    .social-link { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; text-decoration: none; transition: all 0.2s; color: white; }
+    .social-link.linkedin { background: #0077B5; }
+    .social-link.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+    .social-link.facebook { background: #1877F2; }
+    .social-link.youtube { background: #FF0000; }
+    .social-link:hover { transform: scale(1.12); }
+    .footer-col-title { font-size: 10px; letter-spacing: 2.5px; color: var(--gold); font-weight: 600; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; text-align: center; }
+    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.25); }
+    .footer-palette { display: flex; gap: 6px; }
+    .palette-dot { width: 10px; height: 10px; border-radius: 50%; }
+    /* BACK TO TOP — bottom LEFT */
+    #backTop { position: fixed; bottom: 88px; left: 20px; z-index: 300; width: 44px; height: 44px; background: var(--navy); color: var(--white); border: 2px solid var(--gold); border-radius: 50%; font-size: 20px; cursor: pointer; opacity: 0; transition: opacity 0.3s, transform 0.2s; display: flex; align-items: center; justify-content: center; font-family: inherit; line-height: 1; }
+    #backTop:hover { transform: translateY(-3px); background: var(--navy-dk); opacity: 1 !important; }
+    /* FAB STACK — bottom RIGHT */
+    .fab-stack { position: fixed; bottom: 28px; right: 28px; z-index: 200; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+    .fab { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; color: white; box-shadow: 0 4px 16px rgba(0,0,0,0.25); position: relative; }
+    .fab:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(0,0,0,0.35); }
+    .fab-whatsapp { background: #25D366; }
+    .fab-form { background: var(--burgundy); }
+    .fab-calendar { background: var(--navy); border: 1px solid rgba(201,168,76,0.4); }
+    .fab-tip { position: absolute; right: 60px; background: var(--dark); color: var(--white); font-size: 11px; padding: 5px 10px; white-space: nowrap; border: 1px solid rgba(201,168,76,0.2); opacity: 0; pointer-events: none; transition: opacity 0.2s; font-family: 'DM Sans', sans-serif; }
+    .fab:hover .fab-tip { opacity: 1; }
+
+
+    /* SCROLL ANIMATIONS */
+    .reveal { opacity: 1; transform: none; }
+    
+    .reveal-left { opacity: 1; transform: none; }
+    
+    .reveal-right { opacity: 1; transform: none; }
+    
+    .reveal-scale { opacity: 1; transform: none; }
+    
+    /* Stagger delays */
+
+    /* MEDIA / PRESS */
+    .press-section { padding: 72px 48px; background: var(--white); border-bottom: 1px solid #e8dfc8; }
+    .press-inner { max-width: 1100px; margin: 0 auto; }
+    .press-label { font-size: 11px; letter-spacing: 3px; color: var(--gray); font-weight: 600; text-transform: uppercase; text-align: center; margin-bottom: 36px; }
+    .press-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+    .press-card { border: 1px solid #e8dfc8; padding: 28px 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 12px; transition: all 0.3s; min-height: 110px; }
+    .press-card:hover { border-color: var(--gold); background: var(--cream); }
+    .press-icon { font-size: 28px; }
+    .press-name { font-size: 13px; font-weight: 700; color: var(--dark); letter-spacing: 0.5px; }
+    .press-type { font-size: 11px; color: var(--gray); letter-spacing: 1px; text-transform: uppercase; }
+    .press-placeholder { font-size: 11px; color: var(--gray); font-style: italic; }
+    /* SPEAKING REEL */
+    .reel-section { padding: 90px 48px; background: var(--navy-dk); }
+    .reel-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .reel-label { font-size: 11px; letter-spacing: 3px; color: var(--gold); font-weight: 600; text-transform: uppercase; margin-bottom: 12px; }
+    .reel-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 3.5vw, 42px); font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 20px; }
+    .reel-title em { color: var(--gold); font-style: normal; }
+    .reel-desc { font-size: 16px; color: rgba(255,255,255,0.6); line-height: 1.8; margin-bottom: 32px; }
+    .reel-points { display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+    .reel-point { display: flex; align-items: center; gap: 12px; font-size: 14px; color: rgba(255,255,255,0.7); }
+    .reel-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+    .reel-placeholder { background: rgba(255,255,255,0.03); border: 1px solid rgba(201,168,76,0.2); aspect-ratio: 16/9; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; cursor: pointer; transition: all 0.3s; position: relative; overflow: hidden; }
+    .reel-placeholder::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(128,0,0,0.2), transparent); }
+    .reel-placeholder:hover { border-color: var(--gold); background: rgba(255,255,255,0.05); }
+    .reel-play { width: 64px; height: 64px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--dark); position: relative; z-index: 1; transition: transform 0.2s; }
+    .reel-placeholder:hover .reel-play { transform: scale(1.1); }
+    .reel-play-text { font-size: 13px; color: rgba(255,255,255,0.5); letter-spacing: 1px; position: relative; z-index: 1; }
+    .reel-add-note { font-size: 11px; color: rgba(255,255,255,0.25); position: relative; z-index: 1; }
+    /* QUOTE TICKER */
+    .hero-quote-ticker { height: 22px; overflow: hidden; margin-bottom: 20px; }
+    .quote-tick { display: block; font-size: 13px; color: var(--gold); letter-spacing: 0.5px; font-style: italic; opacity: 0; transform: translateY(10px); transition: all 0.6s; position: absolute; }
+    .quote-tick.active { opacity: 1; transform: translateY(0); position: relative; }
+    /* HERO */
+    .hero { min-height:100vh; background:var(--navy-dk); display:flex; align-items:center; padding:120px 48px 80px; position:relative; overflow:hidden; }
+    .hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 55% 70% at 85% 50%, rgba(128,0,0,0.25) 0%, transparent 70%),radial-gradient(ellipse 40% 60% at 15% 80%, rgba(201,168,76,0.07) 0%, transparent 60%); }
+    .hero-grid { position:absolute; inset:0; opacity:0.03; background-image:linear-gradient(var(--gold) 1px,transparent 1px),linear-gradient(90deg,var(--gold) 1px,transparent 1px); background-size:60px 60px; }
+    .hero-inner { max-width:1100px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 400px; gap:80px; align-items:center; position:relative; z-index:1; }
+    .hero-eyebrow { display:inline-flex; align-items:center; gap:12px; margin-bottom:24px; }
+    .hero-eyebrow::before { content:''; width:32px; height:1px; background:var(--gold); }
+    .hero-eyebrow span { font-size:11px; letter-spacing:3px; color:var(--gold); font-weight:600; text-transform:uppercase; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(44px,5.5vw,72px); line-height:1.08; font-weight:900; color:var(--white); margin-bottom:28px; }
+    .hero h1 em { color:var(--gold); font-style:normal; }
+    .hero-sub { font-size:18px; line-height:1.7; color:rgba(255,255,255,0.6); max-width:520px; margin-bottom:44px; }
+    .hero-actions { display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+    .btn-primary { background:var(--gold); color:var(--dark); padding:16px 36px; font-weight:600; font-size:15px; text-decoration:none; transition:all 0.2s; display:inline-block; }
+    .btn-primary:hover { background:var(--gold-lt); transform:translateY(-1px); }
+    .btn-ghost { color:var(--white); border:1px solid rgba(201,168,76,0.4); padding:16px 36px; font-size:15px; text-decoration:none; transition:all 0.2s; display:inline-block; }
+    .btn-ghost:hover { border-color:var(--gold); color:var(--gold); }
+    .hero-card { background:rgba(255,255,255,0.03); border:1px solid rgba(201,168,76,0.2); padding:44px 36px; }
+    .hero-card-label { font-size:10px; letter-spacing:3px; color:var(--gold); font-weight:600; text-transform:uppercase; margin-bottom:32px; }
+    .stat-row { display:flex; flex-direction:column; gap:28px; }
+    .stat-item { border-left:3px solid var(--burgundy); padding-left:20px; }
+    .stat-num { font-family:'Playfair Display',serif; font-size:42px; font-weight:900; color:var(--white); line-height:1; }
+    .stat-num span { color:var(--gold); }
+    .stat-label { font-size:13px; color:rgba(255,255,255,0.45); margin-top:4px; }
+    .hero-card-divider { height:1px; background:rgba(201,168,76,0.15); margin:32px 0; }
+    .hero-badge { display:flex; align-items:center; gap:12px; }
+    .hero-badge-dot { width:8px; height:8px; background:var(--gold); border-radius:50%; animation:pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:0.4;transform:scale(1.4);} }
+    .hero-badge-text { font-size:13px; color:rgba(255,255,255,0.5); }
+    /* STRIP */
+    .strip { background:var(--gold); padding:14px 0; overflow:hidden; }
+    .strip-inner { display:flex; gap:60px; animation:marquee 24s linear infinite; white-space:nowrap; }
+    @keyframes marquee { from{transform:translateX(0);} to{transform:translateX(-50%);} }
+    .strip-item { font-size:11px; letter-spacing:2.5px; font-weight:700; color:var(--dark); text-transform:uppercase; flex-shrink:0; }
+    .strip-dot { color:var(--burgundy); margin:0 8px; }
+    /* WORKED WITH */
+    /* SERVICES */
+    .services { padding:100px 48px; background:var(--white); }
+    .section-header { max-width:1100px; margin:0 auto 60px; display:flex; align-items:flex-end; justify-content:space-between; gap:40px; }
+    .section-label { font-size:11px; letter-spacing:3px; color:var(--gold); font-weight:600; text-transform:uppercase; margin-bottom:12px; }
+    .section-title { font-family:'Playfair Display',serif; font-size:clamp(32px,4vw,48px); font-weight:900; color:var(--dark); line-height:1.1; }
+    .section-sub { font-size:16px; color:var(--gray); max-width:360px; line-height:1.6; text-align:right; }
+    .services-grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(2,1fr); gap:2px; }
+    .service-card { padding:48px 44px; background:var(--cream); border:1px solid #e8dfc8; transition:all 0.3s; cursor:default; }
+    .service-card:hover { background:var(--navy); border-color:var(--navy); }
+    .service-card:hover .service-num,.service-card:hover .service-arrow { color:var(--gold); }
+    .service-card:hover .service-title,.service-card:hover .service-desc { color:var(--white); }
+    .service-card:hover .service-tag { background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.6); }
+    .service-num { font-size:11px; letter-spacing:2px; color:var(--gold); font-weight:600; margin-bottom:20px; transition:color 0.3s; }
+    .service-title { font-family:'Playfair Display',serif; font-size:24px; font-weight:700; color:var(--dark); margin-bottom:16px; line-height:1.2; transition:color 0.3s; }
+    .service-desc { font-size:15px; color:var(--gray); line-height:1.7; margin-bottom:28px; transition:color 0.3s; }
+    .service-footer { display:flex; align-items:center; justify-content:space-between; }
+    .service-tags { display:flex; gap:8px; flex-wrap:wrap; }
+    .service-tag { font-size:11px; letter-spacing:1px; color:var(--gray); background:rgba(27,47,94,0.06); padding:4px 10px; text-transform:uppercase; font-weight:500; transition:all 0.3s; }
+    .service-arrow { font-size:20px; color:var(--burgundy); transition:color 0.3s; }
+    /* ABOUT */
+    .about { padding:100px 48px; background:var(--navy-dk); }
+    .about-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }
+    .about-visual { position:relative; }
+    .about-img-frame { background:var(--burgundy); aspect-ratio:3/4; max-width:380px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+    .about-img-frame img { width:100%; height:100%; object-fit:cover; }
+    .about-accent { position:absolute; bottom:-20px; right:-20px; width:140px; height:140px; background:var(--gold); opacity:0.12; }
+    .about-badge { position:absolute; top:28px; right:-28px; background:var(--gold); padding:16px 20px; text-align:center; min-width:110px; }
+    .about-badge-num { font-family:'Playfair Display',serif; font-size:36px; font-weight:900; color:var(--dark); line-height:1; display:block; }
+    .about-badge-text { font-size:11px; color:var(--dark); font-weight:600; letter-spacing:1px; text-transform:uppercase; display:block; margin-top:4px; }
+    .about-content .section-label { color:var(--gold); }
+    .about-content .section-title { color:var(--white); }
+    .about-text { font-size:16px; color:rgba(255,255,255,0.6); line-height:1.8; margin-bottom:20px; }
+    .about-text strong { color:var(--white); }
+    .about-creds { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:44px; }
+    .cred-item { border-left:3px solid var(--burgundy); padding:12px 16px; background:rgba(255,255,255,0.03); }
+    .cred-title { font-size:14px; font-weight:600; color:var(--white); margin-bottom:2px; }
+    .cred-sub { font-size:12px; color:rgba(255,255,255,0.35); }
+    /* IMPACT */
+    .impact-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; }
+    .impact-item { background:rgba(255,255,255,0.03); border:1px solid rgba(201,168,76,0.15); padding:40px 24px; text-align:center; }
+    .impact-num { font-family:'Playfair Display',serif; font-size:56px; font-weight:900; color:var(--gold); line-height:1; }
+    .impact-num span { font-size:32px; }
+    .impact-label { font-size:13px; color:rgba(255,255,255,0.6); margin-top:8px; line-height:1.4; }
+    /* TESTIMONIALS */
+    .testimonials { padding:100px 48px; background:var(--cream); }
+    .testimonials-grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .testi-card { background:var(--white); border:1px solid #e8dfc8; padding:36px 32px; position:relative; }
+    .testi-card::before { content:'"'; font-family:'Playfair Display',serif; font-size:80px; color:var(--gold); position:absolute; top:16px; right:28px; line-height:1; opacity:0.35; }
+    .testi-stars { margin-bottom:20px; color:var(--gold); font-size:14px; letter-spacing:2px; }
+    .testi-text { font-size:15px; line-height:1.8; color:var(--dark); margin-bottom:28px; font-style:italic; }
+    .testi-author { display:flex; align-items:center; gap:14px; }
+    .testi-avatar { width:44px; height:44px; background:var(--burgundy); display:flex; align-items:center; justify-content:center; color:var(--white); font-weight:700; font-size:16px; flex-shrink:0; }
+    .testi-name { font-size:14px; font-weight:600; color:var(--dark); }
+    .testi-role { font-size:12px; color:var(--gray); margin-top:2px; }
+    /* BOOKS */
+    .books { padding:100px 48px; background:var(--white); }
+    .books-grid { max-width:1100px; margin:60px auto 0; display:flex; gap:16px; overflow-x:auto; padding-bottom:16px; }
+    .book-card { flex-shrink:0; width:190px; }
+    .book-cover { height:270px; display:flex; align-items:center; justify-content:center; font-family:'Playfair Display',serif; font-size:22px; font-weight:900; color:var(--white); text-align:center; padding:24px; line-height:1.2; margin-bottom:14px; }
+    .book-title { font-size:14px; font-weight:600; color:var(--dark); margin-bottom:4px; }
+    .book-sub { font-size:12px; color:var(--gray); }
+    /* BOOKS UPGRADED */
+    .book-card { flex-shrink:0; width:190px; }
+    .book-buy-link { text-decoration:none; display:block; }
+    .book-cover { height:270px; display:flex; align-items:center; justify-content:center; padding:24px; margin-bottom:0; transition:transform 0.3s; }
+    .book-buy-link:hover .book-cover { transform:translateY(-6px); }
+    .book-cover-title { font-family:'Playfair Display',serif; font-size:22px; font-weight:900; color:var(--white); text-align:center; line-height:1.2; }
+    .book-info { padding:14px 4px; }
+    .book-title { font-size:14px; font-weight:600; color:var(--dark); margin-bottom:2px; }
+    .book-sub { font-size:12px; color:var(--gray); margin-bottom:6px; }
+    .book-cta { font-size:12px; color:var(--burgundy); font-weight:600; }
+    .book-buy-link:hover .book-cta { color:var(--navy); }
+    /* CTA */
+    .cta-section { padding:100px 48px; background:var(--burgundy); position:relative; overflow:hidden; }
+    .cta-section::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 60% 80% at 100% 50%, rgba(201,168,76,0.12) 0%, transparent 70%); }
+    .cta-inner { max-width:700px; margin:0 auto; text-align:center; position:relative; z-index:1; }
+    .cta-title { font-family:'Playfair Display',serif; font-size:clamp(36px,5vw,58px); color:var(--white); font-weight:900; margin-bottom:20px; line-height:1.1; }
+    .cta-sub { font-size:17px; color:rgba(255,255,255,0.7); line-height:1.7; margin-bottom:44px; }
+    .cta-actions { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+    @media(max-width:900px){
+      .hero-actions { flex-direction: column; }
+      .hero-actions a { width: 100%; text-align: center; justify-content: center; }
+      .reel-inner { grid-template-columns: 1fr; gap: 40px; }
+      .press-grid { grid-template-columns: repeat(2,1fr); }
+      .reel-section, .press-section { padding-left: 20px; padding-right: 20px; }
+      nav{padding:0 20px;} .nav-links{display:none;} .hamburger{display:flex;}
+      footer { padding: 36px 20px 24px; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; margin-bottom: 28px; }
+      .footer-bottom { flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+      #backTop { position: fixed; bottom: 88px; left: 20px; z-index: 300; width: 44px; height: 44px; background: var(--navy); color: var(--white); border: 2px solid var(--gold); border-radius: 50%; font-size: 20px; cursor: pointer; opacity: 0; transition: opacity 0.3s, transform 0.2s; display: flex; align-items: center; justify-content: center; font-family: inherit; line-height: 1; }
+      .fab-stack { right: 16px; bottom: 16px; gap: 8px; }
+      .fab { width: 48px; height: 48px; font-size: 20px; }
+      .fab-tip { display: none; }
+      .hero-inner { grid-template-columns:1fr; }
+      .hero-card { display:none; }
+      .hero, .services, .about, .testimonials, .books, .cta-section { padding-left:20px; padding-right:20px; }
+      .section-header { flex-direction:column; align-items:flex-start; }
+      .section-sub { text-align:left; }
+      .services-grid { grid-template-columns:1fr; gap:12px; }
+      .service-card { padding:28px 20px; }
+      .about-inner { grid-template-columns:1fr; gap:40px; }
+      .about-badge { display:none; }
+      .about-creds { grid-template-columns:1fr; }
+      .testimonials-grid { grid-template-columns:1fr; }
+      .impact-grid { grid-template-columns:repeat(2,1fr); }
+      .impact-num { font-size:42px; }
+      .impact-item { padding:24px 16px; }
+      .books-grid { gap:12px; }
+    }
+      /* NOSCRIPT / JS-FAIL FALLBACK: show all reveal elements */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal, .reveal-left, .reveal-right, .reveal-scale { opacity: 1 !important; transform: none !important; }
+    
+      /* GLOBAL MOBILE PADDING - prevents all blank section issues */
+      section { padding-left: 20px !important; padding-right: 20px !important; }
+      /* Grid fixes */
+      .impact-grid { grid-template-columns: repeat(2,1fr) !important; }
+      .about-creds { grid-template-columns: 1fr !important; }
+      .testimonials-grid { grid-template-columns: 1fr !important; }
+      .services-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
+      .books-grid { gap: 12px !important; }
+      .why-grid, .past-grid, .topics-grid, .events-grid, .res-grid, .art-grid { grid-template-columns: 1fr !important; }
+      .featured { grid-template-columns: 1fr !important; }
+      .reel-inner { grid-template-columns: 1fr !important; }
+      .press-grid { grid-template-columns: repeat(2,1fr) !important; }
+      .footer-top { grid-template-columns: 1fr !important; gap: 28px !important; }
+      .contact-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="progressBar" style="position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--burgundy));z-index:9999;width:0%;transition:width 0.1s;"></div>
+  <!-- BACK TO TOP -->
+
+  <!-- NEWSLETTER POPUP -->
+  <div id="popup" style="display:none;position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;padding:20px;">
+    <div style="background:var(--dark);border:1px solid rgba(201,168,76,0.3);max-width:480px;width:100%;padding:48px 40px;position:relative;text-align:center;">
+      <button onclick="closePopup()" style="position:absolute;top:16px;right:20px;background:none;border:none;color:rgba(255,255,255,0.4);font-size:22px;cursor:pointer;line-height:1;">×</button>
+      <div style="font-size:36px;margin-bottom:16px;">🎤</div>
+      <div style="font-size:10px;letter-spacing:3px;color:var(--gold);font-weight:600;text-transform:uppercase;margin-bottom:12px;">Free Newsletter</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:900;color:var(--white);line-height:1.2;margin-bottom:12px;">Get Weekly Speaking Tips<br>From Fidel.</h3>
+      <p style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:28px;">Join readers across East Africa getting practical communication and leadership insights every week. Free on Substack.</p>
+      <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" onclick="closePopup()" style="background:var(--gold);color:var(--dark);padding:14px 36px;font-weight:700;font-size:15px;text-decoration:none;display:block;margin-bottom:12px;">Subscribe Free on Substack</a>
+      <button onclick="closePopup()" style="background:none;border:none;color:rgba(255,255,255,0.3);font-size:13px;cursor:pointer;font-family:'DM Sans',sans-serif;">No thanks, I'll miss out</button>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <img src="logo.jpg" alt="Speak to Lead" class="nav-logo-img">
+      <span class="nav-name"><span style="color:#FFFFFF;letter-spacing:3px;font-weight:700;">SPEAK</span>&nbsp;<span style="color:#C9A84C;letter-spacing:1px;font-weight:400;font-size:11px;text-transform:lowercase;">to</span>&nbsp;<span style="color:#FFFFFF;letter-spacing:3px;font-weight:700;">LEAD</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://speaktolead-onboarding.netlify.app" target="_blank" class="nav-cta">Work With Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+<script>
+    function toggleMenu() {
+      var m = document.getElementById('mobileMenu');
+      var h = document.getElementById('hamburger');
+      if (m) m.classList.toggle('open');
+      if (h) h.classList.toggle('open');
+    }
+  </script>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">🏠 Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#about">About Fidel</a>
+    <a href="speaking.html">Book Me to Speak</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://speaktolead-onboarding.netlify.app" target="_blank" class="mobile-cta">Work With Me</a>
+  </div>
+<!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <!-- ROTATING QUOTE -->
+    <div class="hero-quote-ticker" id="quoteTicker">
+      <span class="quote-tick active">"Your voice is your greatest asset."</span>
+      <span class="quote-tick">"The room is waiting for you to speak."</span>
+      <span class="quote-tick">"Confidence is a skill. You can learn it."</span>
+    </div>
+    <div class="hero-eyebrow"><span>Nairobi, Kenya · Speak. Influence. Lead.</span></div>
+        <h1>Find Your Voice.<br><em>Lead the Room.</em><br>Change the World.</h1>
+        <p class="hero-sub">Public speaking coach, author, and founder of Speak to Lead. Helping professionals and leaders across East Africa communicate with clarity, confidence, and lasting impact.</p>
+        <div class="hero-actions">
+          <a href="https://speaktolead-onboarding.netlify.app" class="btn-primary" target="_blank">Start Coaching →</a>
+          <a href="#about" class="btn-ghost">About Fidel</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-label">By the Numbers</div>
+        <div class="stat-row">
+          <div class="stat-item">
+            <div class="stat-num">500<span>+</span></div>
+            <div class="stat-label">Professionals Trained</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">26</div>
+            <div class="stat-label">Books Written in One Year</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">9</div>
+            <div class="stat-label">Services Offered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">10<span>+</span></div>
+            <div class="stat-label">Years on Stage</div>
+          </div>
+        </div>
+        <div class="hero-card-divider"></div>
+        <div class="hero-badge">
+          <div class="hero-badge-dot"></div>
+          <span class="hero-badge-text">Currently accepting new clients</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="strip-inner">
+      <span class="strip-item">Public Speaking Coaching <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Executive Communication <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Keynote Speaking <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Corporate Training <span class="strip-dot">◆</span></span>
+      <span class="strip-item">IGNITE Leadership Programme <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Author · 26 Books <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Speak. Influence. Lead. <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Public Speaking Coaching <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Executive Communication <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Keynote Speaking <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Corporate Training <span class="strip-dot">◆</span></span>
+      <span class="strip-item">IGNITE Leadership Programme <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Author · 26 Books <span class="strip-dot">◆</span></span>
+      <span class="strip-item">Speak. Influence. Lead. <span class="strip-dot">◆</span></span>
+    </div>
+  </div>
+
+  <!-- WORKED WITH -->
+  <section style="padding:70px 48px; background:var(--white); border-bottom:1px solid #e8dfc8;">
+    <div style="max-width:1100px; margin:0 auto; text-align:center;">
+      <p style="font-size:11px; letter-spacing:3px; color:var(--gray); font-weight:600; text-transform:uppercase; margin-bottom:48px;">Trusted &amp; Worked With</p>
+      <div style="display:flex; align-items:center; justify-content:center; gap:32px; flex-wrap:wrap;">
+
+        <div style="text-align:center; opacity:0.7; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">
+          <img src="highway.jpg" alt="Highway High School" style="width:80px; height:80px; border-radius:50%; object-fit:cover; margin:0 auto 12px; display:block; border:2px solid #e8dfc8;">
+          <p style="font-size:12px; font-weight:600; color:var(--dark); letter-spacing:0.5px;">Highway High School</p>
+        </div>
+
+        <div style="text-align:center; opacity:0.7; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">
+          <img src="toastmasters.jpg" alt="Toastmasters International" style="width:80px; height:80px; border-radius:50%; object-fit:cover; margin:0 auto 12px; display:block; border:2px solid #e8dfc8;">
+          <p style="font-size:12px; font-weight:600; color:var(--dark); letter-spacing:0.5px;">Toastmasters International</p>
+        </div>
+
+        <div style="text-align:center; opacity:0.7; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">
+          <img src="worldscholars.jpg" alt="World Scholars Cup" style="width:80px; height:80px; border-radius:50%; object-fit:cover; margin:0 auto 12px; display:block; border:2px solid #e8dfc8;">
+          <p style="font-size:12px; font-weight:600; color:var(--dark); letter-spacing:0.5px;">World Scholars Cup</p>
+        </div>
+
+        <div style="text-align:center; opacity:0.7; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">
+          <img src="rotary.jpg" alt="Rotary International" style="width:80px; height:80px; border-radius:50%; object-fit:cover; margin:0 auto 12px; display:block; border:2px solid #e8dfc8;">
+          <p style="font-size:12px; font-weight:600; color:var(--dark); letter-spacing:0.5px;">Rotary International</p>
+        </div>
+
+        <div style="text-align:center; opacity:0.7; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">
+          <img src="bni.jpg" alt="BNI" style="width:80px; height:80px; border-radius:50%; object-fit:cover; margin:0 auto 12px; display:block; border:2px solid #e8dfc8;">
+          <p style="font-size:12px; font-weight:600; color:var(--dark); letter-spacing:0.5px;">BNI</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-header reveal">
+      <div>
+        <div class="section-label">What I Do</div>
+        <h2 class="section-title">Communication<br>is Leadership.</h2>
+      </div>
+      <p class="section-sub">Every service is built around one belief: your voice is your most powerful leadership tool. Let's develop it.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal delay-1">
+        <div class="service-num">01</div>
+        <h3 class="service-title">One-on-One Public Speaking Coaching</h3>
+        <p class="service-desc">Personalized coaching to take you from nervous to powerful. Build confidence, structure your ideas, and command any room you walk into, one session at a time.</p>
+        <div class="service-footer">
+          <div class="service-tags"><span class="service-tag">Confidence</span><span class="service-tag">Delivery</span></div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-num">02</div>
+        <h3 class="service-title">Executive Communication Coaching</h3>
+        <p class="service-desc">For leaders who need to influence, persuade, and inspire. Master high-stakes communication, build executive presence, and lead every room you walk into.</p>
+        <div class="service-footer">
+          <div class="service-tags"><span class="service-tag">Leadership</span><span class="service-tag">Presence</span></div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-num">03</div>
+        <h3 class="service-title">Corporate &amp; Team Training</h3>
+        <p class="service-desc">High-impact workshops for teams and organisations. Topics include public speaking, communication, leadership, and personal brand, tailored specifically for your team.</p>
+        <div class="service-footer">
+          <div class="service-tags"><span class="service-tag">Teams</span><span class="service-tag">Workshops</span></div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+      <div class="service-card reveal delay-4">
+        <div class="service-num">04</div>
+        <h3 class="service-title">Keynote Speaking &amp; Engagements</h3>
+        <p class="service-desc">Book Fidel to speak at your conference, summit, school, or corporate event. Keynote topics: public speaking, communication, leadership, and personal brand.</p>
+        <div class="service-footer">
+          <div class="service-tags"><span class="service-tag">Keynote</span><span class="service-tag">Events</span></div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+      <div class="service-card reveal delay-5">
+        <div class="service-num">05</div>
+        <h3 class="service-title">Corporate Emceeing</h3>
+        <p class="service-desc">Professional, energetic, and eloquent MC services for corporate events, galas, award ceremonies, product launches, and conferences across Kenya and East Africa.</p>
+        <div class="service-footer">
+          <div class="service-tags"><span class="service-tag">MC</span><span class="service-tag">Events</span></div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-num">06</div>
+        <h3 class="service-title">IGNITE Leadership Programme</h3>
+        <p class="service-desc">A complete leadership development experience for young professionals and emerging leaders who are done waiting for permission to lead.</p>
+        <div class="service-footer">
+          <div class="service-tags"><span class="service-tag">Youth</span><span class="service-tag">Leadership</span></div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-num">07</div>
+        <h3 class="service-title">Children Public Speaking Coaching</h3>
+        <p class="service-desc">Helping children and teenagers find their voice early. Fun, structured coaching that builds confidence, clarity, and communication skills from a young age.</p>
+        <div class="service-footer">
+          <div class="service-tags"><span class="service-tag">Children</span><span class="service-tag">Youth</span></div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-num">08</div>
+        <h3 class="service-title">Debate Coaching</h3>
+        <p class="service-desc">Structured debate training for students, schools, and young professionals. Learn to argue persuasively, think critically, and win rooms with logic and confidence.</p>
+        <div class="service-footer">
+          <div class="service-tags"><span class="service-tag">Debate</span><span class="service-tag">Critical Thinking</span></div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-num">09</div>
+        <h3 class="service-title">Speechwriting</h3>
+        <p class="service-desc">World-class speeches for political leaders, corporate executives, and everyone in between. Weddings, graduations, campaigns, boardrooms, your words, perfected.</p>
+        <div class="service-footer">
+          <div class="service-tags"><span class="service-tag">Speeches</span><span class="service-tag">Writing</span></div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-visual fade-up">
+        <div class="about-img-frame">
+          <img src="fidel.jpg" alt="Fidel Owiti" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="about-accent"></div>
+        <div class="about-badge">
+          <span class="about-badge-num">26</span>
+          <span class="about-badge-text">Books Written</span>
+        </div>
+      </div>
+      <div class="about-content fade-up">
+        <div class="section-label">About Fidel</div>
+        <h2 class="section-title">I Started Speaking<br>at Fourteen.</h2>
+        <p class="about-text" style="margin-top:24px;">I'm Fidel Owiti, public speaker, coach, author, and founder of <strong>Speak to Lead</strong>. I built this from a single coaching session with no office, no staff, and no capital into a training organisation that has developed hundreds of communicators across Kenya and East Africa.</p>
+        <p class="about-text">At 26, I wrote <strong>26 books in one year</strong>. I founded the <strong>Kenya Association of Public Speakers (KAPS)</strong>. I coach executives, students, and professionals who have something important to say and need the tools to say it powerfully.</p>
+        <p class="about-text">My belief is simple: <strong>communication is leadership</strong>. The moment you learn to speak with clarity and confidence, everything changes, your influence, your impact, and your income.</p>
+        <div class="about-creds">
+          <div class="cred-item"><div class="cred-title">Founder, Speak to Lead</div><div class="cred-sub">Coaching Organisation</div></div>
+          <div class="cred-item"><div class="cred-title">Founder, KAPS</div><div class="cred-sub">Kenya Association of Public Speakers</div></div>
+          <div class="cred-item"><div class="cred-title">Author</div><div class="cred-sub">26 Books, Speak to Lead Series</div></div>
+          <div class="cred-item"><div class="cred-title">Speaker</div><div class="cred-sub">Universities, Corporates, Summits</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT NUMBERS -->
+  <section style="padding:80px 48px; background:var(--navy);">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:56px;">
+        <p style="font-size:11px; letter-spacing:3px; color:var(--gold); font-weight:600; text-transform:uppercase; margin-bottom:12px;">By The Numbers</p>
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,3.5vw,42px); font-weight:900; color:var(--white); line-height:1.1;">The Impact So Far.</h2>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-item reveal-scale">
+          <div class="impact-num"><span class="count-up" data-target="500" data-suffix="+">0+</span></div>
+          <div class="impact-label">Professionals Trained</div>
+        </div>
+        <div class="impact-item reveal-scale">
+          <div class="impact-num"><span class="count-up" data-target="26" data-suffix="">0</span></div>
+          <div class="impact-label">Books Written in One Year</div>
+        </div>
+        <div class="impact-item reveal-scale">
+          <div class="impact-num"><span class="count-up" data-target="10" data-suffix="+">0+</span></div>
+          <div class="impact-label">Years on Stage</div>
+        </div>
+        <div class="impact-item reveal-scale">
+          <div class="impact-num"><span class="count-up" data-target="5" data-suffix="+">0+</span></div>
+          <div class="impact-label">Organisations Partnered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header reveal" style="max-width:1100px; margin:0 auto 60px;">
+      <div>
+        <div class="section-label">Client Results</div>
+        <h2 class="section-title">What Clients Say.</h2>
+      </div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Fidel changed how I think about speaking. I used to dread presentations. After just four sessions I gave a keynote at work and got a standing ovation. That was a first for me."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SM</div>
+          <div>
+            <div class="testi-name">Sarah M.</div>
+            <div class="testi-role">Marketing Manager, Nairobi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The IGNITE programme was exactly what our team needed. Fidel does not just teach theory, he gets in the room with you, watches how you speak, and fixes the real problems."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">JK</div>
+          <div>
+            <div class="testi-name">James K.</div>
+            <div class="testi-role">CEO, Tech Startup, Nairobi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I hired Fidel to MC our annual gala and the feedback from guests was incredible. Professional, energetic, and he kept the evening flowing perfectly. We will bring him back."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AG</div>
+          <div>
+            <div class="testi-name">Amina G.</div>
+            <div class="testi-role">Events Director, Nairobi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"My daughter did the children coaching programme. In two months she went from refusing to speak in class to winning her school's public speaking competition. Worth every shilling."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PW</div>
+          <div>
+            <div class="testi-name">Peter W.</div>
+            <div class="testi-role">Parent, Nairobi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Fidel wrote a speech for my company's 10-year anniversary dinner. Every person who heard it told me it was the best corporate speech they had witnessed. He understood our story."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RO</div>
+          <div>
+            <div class="testi-name">Ruth O.</div>
+            <div class="testi-role">Founder, Consulting Firm</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Our debate team went from losing every round to placing second nationally after Fidel's training. He has a way of making complex argumentation feel natural and even fun."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">BN</div>
+          <div>
+            <div class="testi-name">Brian N.</div>
+            <div class="testi-role">Teacher, Highway High School</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKS -->
+  <section class="books" id="books">
+    <div style="max-width:1100px;margin:0 auto 52px;display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;">
+      <div>
+        <div class="section-label">Published Works</div>
+        <h2 class="section-title">26 Books. One Year.<br>Your Growth, Documented.</h2>
+      </div>
+      <a href="https://selar.com/fidelowiti" target="_blank" style="background:var(--gold);color:var(--dark);padding:14px 32px;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;flex-shrink:0;">Browse eBooks on Selar →</a>
+    </div>
+    <div class="books-grid">
+      <div class="book-card">
+        <a href="#" class="book-buy-link" target="_blank">
+          <div class="book-cover" style="background:linear-gradient(135deg,#800000,#4a0000);">
+            <span class="book-cover-title">IGNITE</span>
+          </div>
+          <div class="book-info">
+            <div class="book-title">IGNITE</div>
+            <div class="book-sub">Youth Leadership</div>
+            <div class="book-cta">Buy eBook →</div>
+          </div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="#" class="book-buy-link" target="_blank">
+          <div class="book-cover" style="background:linear-gradient(135deg,#1B2F5E,#0d1a35);">
+            <span class="book-cover-title">ALMOST</span>
+          </div>
+          <div class="book-info">
+            <div class="book-title">ALMOST</div>
+            <div class="book-sub">Stop Waiting, Start</div>
+            <div class="book-cta">Buy eBook →</div>
+          </div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="#" class="book-buy-link" target="_blank">
+          <div class="book-cover" style="background:linear-gradient(135deg,#5C0000,#2a0000);">
+            <span class="book-cover-title">A Life That Matters</span>
+          </div>
+          <div class="book-info">
+            <div class="book-title">A Life That Matters</div>
+            <div class="book-sub">Purpose & Fulfillment</div>
+            <div class="book-cta">Buy eBook →</div>
+          </div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="#" class="book-buy-link" target="_blank">
+          <div class="book-cover" style="background:linear-gradient(135deg,#7a6520,#C9A84C);">
+            <span class="book-cover-title" style="color:#1A0A00;">Quiet Influence</span>
+          </div>
+          <div class="book-info">
+            <div class="book-title">Quiet Influence</div>
+            <div class="book-sub">Introverted Leadership</div>
+            <div class="book-cta">Buy eBook →</div>
+          </div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="#" class="book-buy-link" target="_blank">
+          <div class="book-cover" style="background:linear-gradient(135deg,#243F7A,#111E3D);">
+            <span class="book-cover-title">SPARK</span>
+          </div>
+          <div class="book-info">
+            <div class="book-title">SPARK</div>
+            <div class="book-sub">Find Your Fire</div>
+            <div class="book-cta">Buy eBook →</div>
+          </div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="https://selar.com/fidelowiti" class="book-buy-link" target="_blank">
+          <div class="book-cover" style="background:linear-gradient(135deg,#2a0000,#800000);border:2px dashed rgba(201,168,76,0.4);">
+            <span class="book-cover-title" style="font-size:40px;">+21</span>
+          </div>
+          <div class="book-info">
+            <div class="book-title">21 More Books</div>
+            <div class="book-sub">Full Speak to Lead Series</div>
+            <div class="book-cta">Browse All →</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;padding:28px;background:var(--cream);border:1px solid #e8dfc8;max-width:1100px;margin-left:auto;margin-right:auto;">
+      <p style="font-size:14px;color:var(--gray);margin-bottom:16px;">Buy any of these eBooks on Selar. Instant download. Pay once, keep forever.</p>
+      <a href="https://selar.com/fidelowiti" target="_blank" style="background:var(--navy);color:var(--white);padding:14px 40px;font-weight:600;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;"><i class="fas fa-book"></i> Buy Any of These eBooks on Selar</a>
+    </div>
+  </section>
+
+  <!-- SPEAKING REEL -->
+  <section class="reel-section">
+    <div class="reel-inner">
+      <div class="reveal-left">
+        <div class="reel-label">Watch Fidel Speak</div>
+        <h2 class="reel-title">See the Energy<br>Before You <em>Book.</em></h2>
+        <p class="reel-desc">Words on a page can only say so much. Watch Fidel in action and see why event organizers and coaching clients keep coming back.</p>
+        <div class="reel-points">
+          <div class="reel-point"><div class="reel-dot"></div>Dynamic stage presence</div>
+          <div class="reel-point"><div class="reel-dot"></div>Audience engagement that holds attention</div>
+          <div class="reel-point"><div class="reel-dot"></div>Stories that move people to act</div>
+          <div class="reel-point"><div class="reel-dot"></div>Bilingual in English and Swahili</div>
+        </div>
+        <a href="https://youtube.com/@fidelowiti9170" target="_blank" style="background:var(--gold);color:var(--dark);padding:14px 32px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-youtube"></i> Watch on YouTube</a>
+      </div>
+      <div class="reveal-right">
+        <div class="reel-placeholder" onclick="window.open('https://youtube.com/@fidelowiti9170','_blank')">
+          <div class="reel-play">▶</div>
+          <div class="reel-play-text">WATCH FIDEL SPEAK</div>
+          <div class="reel-add-note">Click to watch on YouTube</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS & MEDIA -->
+  <section class="press-section">
+    <div class="press-inner">
+      <div class="press-label">As Featured In &amp; Affiliated With</div>
+      <div class="press-grid">
+        <div class="press-card reveal delay-1">
+          <div class="press-icon">📻</div>
+          <div class="press-name">Radio Feature</div>
+          <div class="press-placeholder">Add your radio feature here</div>
+        </div>
+        <div class="press-card reveal delay-2">
+          <div class="press-icon">📰</div>
+          <div class="press-name">Press Feature</div>
+          <div class="press-placeholder">Add newspaper or magazine feature</div>
+        </div>
+        <div class="press-card reveal delay-3">
+          <div class="press-icon">🎙️</div>
+          <div class="press-name">Podcast Guest</div>
+          <div class="press-placeholder">Add podcast appearance here</div>
+        </div>
+        <div class="press-card reveal delay-4">
+          <div class="press-icon">📺</div>
+          <div class="press-name">TV Appearance</div>
+          <div class="press-placeholder">Add TV or media appearance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner fade-up">
+      <div class="section-label">Ready to Begin?</div>
+      <h2 class="cta-title">Your Voice is Your Most Powerful Asset.</h2>
+      <p class="cta-sub">Stop waiting for the right moment to start speaking up. The room is ready for you. Let's make sure you're ready for the room.</p>
+      <div class="cta-actions">
+        <a href="https://speaktolead-onboarding.netlify.app" class="btn-primary" target="_blank">Apply for Coaching →</a>
+        <a href="https://calendly.com/fowiti76" class="btn-ghost" target="_blank">Book a Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <img src="logo.jpg" alt="Speak to Lead" class="footer-logo">
+          <div class="footer-brand-name">Speak to Lead</div>
+          <p class="footer-brand-sub">Helping professionals and leaders across Kenya and East Africa communicate with clarity, confidence, and impact. Founded by Fidel Owiti, Nairobi.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/fidelowiti" class="social-link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/fidel_owiti?igsh=bGVqeW1rcGl4cGY3" class="social-link instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/fidelowiti21" class="social-link facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@fidelowiti9170" class="social-link youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About Fidel</a></li>
+            <li><a href="speaking.html">Book Fidel to Speak</a></li>
+            <li><a href="blog.html">Blog &amp; Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="#" class="reveal-email-link"><span class="reveal-email">speaktolead99@gmail.com</span></a></li>
+            <li><a href="https://wa.me/254113660881" target="_blank">+254 113 660 881</a></li>
+            <li><a href="https://calendly.com/fowiti76" target="_blank">Book a Call</a></li>
+            <li><a href="https://speaktolead-onboarding.netlify.app" target="_blank">Client Intake Form</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Speak to Lead · Nairobi, Kenya</span>
+        <div class="footer-palette">
+          <div class="palette-dot" style="background:#1B2F5E;"></div>
+          <div class="palette-dot" style="background:#C9A84C;"></div>
+          <div class="palette-dot" style="background:#800000;"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTION BUTTONS -->
+  <!-- Back to top — left side -->
+
+  <!-- NEWSLETTER POPUP -->
+  <div id="popup" style="display:none;position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;padding:20px;">
+    <div style="background:var(--dark);border:1px solid rgba(201,168,76,0.3);max-width:480px;width:100%;padding:48px 40px;position:relative;text-align:center;">
+      <button onclick="closePopup()" style="position:absolute;top:16px;right:20px;background:none;border:none;color:rgba(255,255,255,0.4);font-size:22px;cursor:pointer;line-height:1;">×</button>
+      <div style="font-size:36px;margin-bottom:16px;">🎤</div>
+      <div style="font-size:10px;letter-spacing:3px;color:var(--gold);font-weight:600;text-transform:uppercase;margin-bottom:12px;">Free Newsletter</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:900;color:var(--white);line-height:1.2;margin-bottom:12px;">Get Weekly Speaking Tips<br>From Fidel.</h3>
+      <p style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:28px;">Join readers across East Africa getting practical communication and leadership insights every week. Free on Substack.</p>
+      <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" onclick="closePopup()" style="background:var(--gold);color:var(--dark);padding:14px 36px;font-weight:700;font-size:15px;text-decoration:none;display:block;margin-bottom:12px;">Subscribe Free on Substack</a>
+      <button onclick="closePopup()" style="background:none;border:none;color:rgba(255,255,255,0.3);font-size:13px;cursor:pointer;font-family:'DM Sans',sans-serif;">No thanks, I'll miss out</button>
+    </div>
+  </div>
+  <button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+  <!-- Action stack — right side -->
+  <div class="fab-stack">
+    <a href="https://wa.me/254113660881" class="fab fab-whatsapp" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="fab-tip">WhatsApp</span>
+    </a>
+    <a href="https://speaktolead-onboarding.netlify.app" class="fab fab-form" target="_blank" title="Client Intake Form">
+      <i class="fas fa-file-alt"></i>
+      <span class="fab-tip">Apply Now</span>
+    </a>
+    <a href="https://calendly.com/fowiti76" class="fab fab-calendar" target="_blank" title="Book a Call">
+      <i class="fas fa-calendar-check"></i>
+      <span class="fab-tip">Book a Call</span>
+    </a>
+  </div>
+
+  <script>
+    // ── SCROLL REVEAL ──
+
+
+    // ── SCROLL PROGRESS + BACK TO TOP ──
+    window.addEventListener('scroll', () => {
+      const st = document.documentElement.scrollTop;
+      const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const bar = document.getElementById('progressBar');
+      const btn = document.getElementById('backTop');
+      if (bar) bar.style.width = (st / h * 100) + '%';
+      if (btn) btn.style.opacity = st > 400 ? '1' : '0';
+    });
+
+    // ── ROTATING QUOTE TICKER ──
+    const ticks = document.querySelectorAll('.quote-tick');
+    let tickIdx = 0;
+    if (ticks.length) {
+      setInterval(() => {
+        ticks[tickIdx].classList.remove('active');
+        tickIdx = (tickIdx + 1) % ticks.length;
+        ticks[tickIdx].classList.add('active');
+      }, 3500);
+    }
+
+    // ── COUNTER ANIMATION ──
+    function animateCount(el, target, suffix) {
+      let current = 0;
+      const step = Math.ceil(target / 60);
+      const timer = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = current + suffix;
+        if (current >= target) clearInterval(timer);
+      }, 25);
+    }
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const el = e.target;
+          const target = parseInt(el.dataset.target);
+          const suffix = el.dataset.suffix || '';
+          animateCount(el, target, suffix);
+          counterObs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.count-up').forEach(el => counterObs.observe(el));
+
+    // Newsletter popup — show after 25 seconds if not dismissed
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      sessionStorage.setItem('popupDismissed', '1');
+    }
+    if (!sessionStorage.getItem('popupDismissed')) {
+      setTimeout(() => {
+        const p = document.getElementById('popup');
+        if (p) p.style.display = 'flex';
+      }, 25000);
+    }
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("open");
+      document.getElementById("hamburger").classList.toggle("open");
+    }
+    document.querySelectorAll(".mobile-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("mobileMenu").classList.remove("open");
+        document.getElementById("hamburger").classList.remove("open");
+      });
+    });
+  

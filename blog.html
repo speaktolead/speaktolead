@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Resources | Fidel Owiti, Speak to Lead</title>
+  <meta name="description" content="Articles on public speaking, leadership, communication and personal brand by Fidel Owiti.">
+  <meta property="og:title" content="Blog | Speak to Lead by Fidel Owiti">
+  <meta property="og:description" content="Read articles on speaking, leadership and communication.">
+  <meta property="og:image" content="logo.jpg">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--navy:#1B2F5E;--navy-dk:#111E3D;--gold:#C9A84C;--gold-lt:#DFC070;--burgundy:#800000;--cream:#FAF6EE;--dark:#0E1628;--gray:#5A6478;--white:#FFFFFF;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;color:var(--dark);background:var(--white);overflow-x:hidden;}
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(14,22,40,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(201,168,76,0.2); padding: 0 48px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-logo-img { height: 46px; width: 46px; border-radius: 50%; object-fit: cover; border: 1.5px solid rgba(201,168,76,0.5); }
+    .nav-name { font-size: 13px; letter-spacing: 0; color: var(--white); font-weight: 500; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .nav-cta { background: var(--gold) !important; color: var(--dark) !important; padding: 10px 18px !important; font-weight: 600 !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--white); display: block; transition: all 0.3s; }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+    .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; z-index: 99; background: rgba(14,22,40,0.99); flex-direction: column; padding: 16px 24px 28px; border-bottom: 2px solid rgba(201,168,76,0.3); }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 16px; padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,0.06); transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu .mobile-cta { background: var(--gold); color: var(--dark); text-align: center; padding: 14px; font-weight: 700; margin-top: 12px; border: none; }
+    /* FOOTER */
+    footer { background: var(--dark); padding: 56px 48px 32px; border-top: 1px solid rgba(201,168,76,0.15); }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 60px; margin-bottom: 40px; }
+    .footer-logo { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 1.5px solid rgba(201,168,76,0.4); margin-bottom: 16px; display: block; }
+    .footer-brand-name { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); font-weight: 700; margin-bottom: 10px; }
+    .footer-brand-sub { font-size: 13px; color: rgba(255,255,255,0.35); line-height: 1.7; margin-bottom: 24px; }
+    .footer-social { display: flex; gap: 10px; flex-wrap: wrap; }
+    .social-link { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; text-decoration: none; transition: all 0.2s; color: white; }
+    .social-link.linkedin { background: #0077B5; }
+    .social-link.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+    .social-link.facebook { background: #1877F2; }
+    .social-link.youtube { background: #FF0000; }
+    .social-link:hover { transform: scale(1.12); }
+    .footer-col-title { font-size: 10px; letter-spacing: 2.5px; color: var(--gold); font-weight: 600; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; text-align: center; }
+    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.25); }
+    .footer-palette { display: flex; gap: 6px; }
+    .palette-dot { width: 10px; height: 10px; border-radius: 50%; }
+    /* BACK TO TOP — bottom LEFT */
+    #backTop { position: fixed; bottom: 88px; left: 20px; z-index: 300; width: 44px; height: 44px; background: var(--navy); color: var(--white); border: 2px solid var(--gold); border-radius: 50%; font-size: 20px; cursor: pointer; opacity: 0; transition: opacity 0.3s, transform 0.2s; display: flex; align-items: center; justify-content: center; font-family: inherit; line-height: 1; }
+    #backTop:hover { transform: translateY(-3px); background: var(--navy-dk); opacity: 1 !important; }
+    /* FAB STACK — bottom RIGHT */
+    .fab-stack { position: fixed; bottom: 28px; right: 28px; z-index: 200; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+    .fab { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; color: white; box-shadow: 0 4px 16px rgba(0,0,0,0.25); position: relative; }
+    .fab:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(0,0,0,0.35); }
+    .fab-whatsapp { background: #25D366; }
+    .fab-form { background: var(--burgundy); }
+    .fab-calendar { background: var(--navy); border: 1px solid rgba(201,168,76,0.4); }
+    .fab-tip { position: absolute; right: 60px; background: var(--dark); color: var(--white); font-size: 11px; padding: 5px 10px; white-space: nowrap; border: 1px solid rgba(201,168,76,0.2); opacity: 0; pointer-events: none; transition: opacity 0.2s; font-family: 'DM Sans', sans-serif; }
+    .fab:hover .fab-tip { opacity: 1; }
+
+
+    /* PAGE */
+    .page-hero{background:var(--navy-dk);padding:140px 48px 80px;position:relative;overflow:hidden;}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 70% at 80% 50%,rgba(128,0,0,0.2) 0%,transparent 70%);}
+    .hero-grid{position:absolute;inset:0;opacity:0.03;background-image:linear-gradient(var(--gold) 1px,transparent 1px),linear-gradient(90deg,var(--gold) 1px,transparent 1px);background-size:60px 60px;}
+    .hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1;}
+    .eyebrow{display:inline-flex;align-items:center;gap:12px;margin-bottom:20px;}
+    .eyebrow::before{content:'';width:32px;height:1px;background:var(--gold);}
+    .eyebrow span{font-size:11px;letter-spacing:3px;color:var(--gold);font-weight:600;text-transform:uppercase;}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(40px,5vw,64px);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:20px;}
+    h1 em{color:var(--gold);font-style:normal;}
+    .hero-p{font-size:18px;color:rgba(255,255,255,0.6);max-width:580px;line-height:1.7;margin-bottom:36px;}
+    .btn-gold{background:var(--gold);color:var(--dark);padding:16px 36px;font-weight:600;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;}
+    .btn-gold:hover{background:var(--gold-lt);}
+    .btn-navy{background:var(--navy);color:var(--white);padding:16px 36px;font-weight:600;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;}
+    /* SUBSTACK BANNER */
+    .banner{background:var(--gold);padding:16px 48px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+    .banner-text{font-size:15px;font-weight:600;color:var(--dark);}
+    .banner-text span{font-weight:400;font-size:13px;opacity:0.7;margin-left:6px;}
+    .banner-btn{background:var(--dark);color:var(--gold);padding:10px 24px;font-weight:600;font-size:13px;text-decoration:none;white-space:nowrap;}
+    /* TOPICS FILTER */
+    .filter-bar{padding:28px 48px;background:var(--white);border-bottom:1px solid #e8dfc8;}
+    .filter-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+    .filter-label{font-size:11px;letter-spacing:2px;color:var(--gray);font-weight:600;text-transform:uppercase;margin-right:4px;}
+    .filter-btn{padding:8px 18px;font-size:13px;border:1px solid #e8dfc8;background:transparent;color:var(--gray);cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
+    .filter-btn.active,.filter-btn:hover{background:var(--navy);color:var(--white);border-color:var(--navy);}
+    /* ARTICLES */
+    .articles{padding:72px 48px;background:var(--white);}
+    .articles-inner{max-width:1100px;margin:0 auto;}
+    .section-label{font-size:11px;letter-spacing:3px;color:var(--gold);font-weight:600;text-transform:uppercase;margin-bottom:12px;}
+    .section-title{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,42px);font-weight:900;color:var(--dark);line-height:1.1;margin-bottom:48px;}
+    /* FEATURED */
+    .featured{display:grid;grid-template-columns:1fr 1fr;border:1px solid #e8dfc8;margin-bottom:40px;text-decoration:none;transition:all 0.3s;}
+    .featured:hover{border-color:var(--gold);}
+    .featured-img{min-height:320px;display:flex;align-items:center;justify-content:center;font-size:72px;position:relative;}
+    .featured-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(128,0,0,0.35),rgba(27,47,94,0.55));}
+    .featured-img span{position:relative;z-index:1;}
+    .featured-body{padding:44px;background:var(--white);display:flex;flex-direction:column;justify-content:center;}
+    .art-cat{font-size:10px;letter-spacing:2.5px;color:var(--gold);font-weight:600;text-transform:uppercase;margin-bottom:14px;}
+    .art-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--dark);line-height:1.3;margin-bottom:14px;}
+    .art-excerpt{font-size:15px;color:var(--gray);line-height:1.7;margin-bottom:20px;}
+    .art-meta{font-size:12px;color:var(--gray);margin-bottom:20px;display:flex;gap:16px;}
+    .art-cta{font-size:14px;color:var(--burgundy);font-weight:600;display:inline-flex;align-items:center;gap:6px;}
+    /* GRID */
+    .art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:40px;}
+    .art-card{border:1px solid #e8dfc8;text-decoration:none;display:block;transition:all 0.3s;}
+    .art-card:hover{border-color:var(--gold);transform:translateY(-4px);}
+    .art-card-img{height:170px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+    .art-card-body{padding:24px;}
+    .art-card .art-title{font-size:17px;margin-bottom:8px;}
+    .art-card .art-excerpt{font-size:13px;margin-bottom:14px;}
+    /* EMAIL CAPTURE */
+    .email-section{padding:72px 48px;background:var(--navy-dk);}
+    .email-inner{max-width:680px;margin:0 auto;text-align:center;}
+    .email-title{font-family:'Playfair Display',serif;font-size:clamp(30px,4vw,46px);font-weight:900;color:var(--white);margin:16px 0;line-height:1.15;}
+    .email-title em{color:var(--gold);font-style:normal;}
+    .email-sub{font-size:16px;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:32px;}
+    .email-perks{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;}
+    .perk{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.6);}
+    .perk-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0;}
+    .email-form{display:flex;gap:0;max-width:480px;margin:0 auto 16px;}
+    .email-input{flex:1;padding:16px 20px;font-size:15px;border:none;background:rgba(255,255,255,0.08);color:var(--white);font-family:'DM Sans',sans-serif;outline:none;border:1px solid rgba(201,168,76,0.3);}
+    .email-input::placeholder{color:rgba(255,255,255,0.4);}
+    .email-input:focus{border-color:var(--gold);}
+    .email-submit{background:var(--gold);color:var(--dark);padding:16px 24px;font-weight:700;font-size:14px;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;transition:background 0.2s;}
+    .email-submit:hover{background:var(--gold-lt);}
+    .email-note{font-size:12px;color:rgba(255,255,255,0.3);}
+    /* RESOURCES */
+    .resources{padding:72px 48px;background:var(--cream);}
+    .resources-inner{max-width:1100px;margin:0 auto;}
+    .res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px;}
+    .res-card{background:var(--white);border:1px solid #e8dfc8;padding:32px;transition:all 0.3s;}
+    .res-card:hover{border-color:var(--gold);transform:translateY(-3px);}
+    .res-icon{font-size:32px;margin-bottom:16px;}
+    .res-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--dark);margin-bottom:10px;}
+    .res-desc{font-size:14px;color:var(--gray);line-height:1.6;margin-bottom:20px;}
+    .res-link{font-size:13px;color:var(--burgundy);font-weight:600;text-decoration:none;}
+    @media(max-width:900px){
+      nav{padding:0 20px;} .nav-links{display:none;} .hamburger{display:flex;}
+      footer { padding: 36px 20px 24px; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; margin-bottom: 28px; }
+      .footer-bottom { flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+      #backTop { position: fixed; bottom: 88px; left: 20px; z-index: 300; width: 44px; height: 44px; background: var(--navy); color: var(--white); border: 2px solid var(--gold); border-radius: 50%; font-size: 20px; cursor: pointer; opacity: 0; transition: opacity 0.3s, transform 0.2s; display: flex; align-items: center; justify-content: center; font-family: inherit; line-height: 1; }
+      .fab-stack { right: 16px; bottom: 16px; gap: 8px; }
+      .fab { width: 48px; height: 48px; font-size: 20px; }
+      .fab-tip { display: none; }
+      .page-hero,.articles,.email-section,.resources,.filter-bar,.banner{padding-left:20px!important;padding-right:20px!important;}
+      .featured{grid-template-columns:1fr;}
+      .featured-img{min-height:200px;}
+      .art-grid{grid-template-columns:1fr;}
+      .res-grid{grid-template-columns:1fr;}
+      .email-form{flex-direction:column;}
+      .email-input,.email-submit{width:100%;}
+    }
+  
+    .reveal { opacity: 1; transform: none; transition: none; }
+    
+    
+    .reveal-left { opacity: 1; transform: none; transition: none; }
+    .reveal-right { opacity: 1; transform: none; transition: none; }
+    .reveal-scale { opacity: 1; transform: none; transition: none; }
+
+      /* NOSCRIPT / JS-FAIL FALLBACK: show all reveal elements */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal, .reveal-left, .reveal-right, .reveal-scale { opacity: 1 !important; transform: none !important; }
+    
+      /* GLOBAL MOBILE PADDING - prevents all blank section issues */
+      section { padding-left: 20px !important; padding-right: 20px !important; }
+      /* Grid fixes */
+      .impact-grid { grid-template-columns: repeat(2,1fr) !important; }
+      .about-creds { grid-template-columns: 1fr !important; }
+      .testimonials-grid { grid-template-columns: 1fr !important; }
+      .services-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
+      .books-grid { gap: 12px !important; }
+      .why-grid, .past-grid, .topics-grid, .events-grid, .res-grid, .art-grid { grid-template-columns: 1fr !important; }
+      .featured { grid-template-columns: 1fr !important; }
+      .reel-inner { grid-template-columns: 1fr !important; }
+      .press-grid { grid-template-columns: repeat(2,1fr) !important; }
+      .footer-top { grid-template-columns: 1fr !important; gap: 28px !important; }
+      .contact-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</head>
+<body>
+  <div id="progressBar" style="position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--burgundy));z-index:9999;width:0%;transition:width 0.1s;pointer-events:none;"></div>
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <img src="logo.jpg" alt="Speak to Lead" class="nav-logo-img">
+      <span class="nav-name"><span style="color:#FFFFFF;letter-spacing:3px;font-weight:700;">SPEAK</span>&nbsp;<span style="color:#C9A84C;letter-spacing:1px;font-weight:400;font-size:11px;text-transform:lowercase;">to</span>&nbsp;<span style="color:#FFFFFF;letter-spacing:3px;font-weight:700;">LEAD</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://speaktolead-onboarding.netlify.app" target="_blank" class="nav-cta">Work With Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+<script>
+    function toggleMenu() {
+      var m = document.getElementById('mobileMenu');
+      var h = document.getElementById('hamburger');
+      if (m) m.classList.toggle('open');
+      if (h) h.classList.toggle('open');
+    }
+  </script>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">🏠 Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#about">About Fidel</a>
+    <a href="speaking.html">Book Me to Speak</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://speaktolead-onboarding.netlify.app" target="_blank" class="mobile-cta">Work With Me</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <div class="eyebrow"><span>Ideas Worth Speaking About</span></div>
+      <h1>Blog &amp;<br><em>Resources.</em></h1>
+      <p class="hero-p">Practical insights on public speaking, leadership, communication, and personal brand. Read on Substack or subscribe to get every article straight to your inbox.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="btn-gold"><i class="fas fa-newspaper"></i> Subscribe on Substack</a>
+        <a href="#articles" class="btn-navy"><i class="fas fa-book-open"></i> Read Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSTACK BANNER -->
+  <div class="banner">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <i class="fas fa-newspaper" style="font-size:18px;color:var(--dark);"></i>
+      <span class="banner-text">The Speak to Lead Newsletter is live on Substack <span>— weekly insights on speaking, leadership and communication</span></span>
+    </div>
+    <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="banner-btn">Subscribe Free →</a>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <span class="filter-label">Topics:</span>
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Public Speaking</button>
+      <button class="filter-btn">Leadership</button>
+      <button class="filter-btn">Communication</button>
+      <button class="filter-btn">Personal Brand</button>
+      <button class="filter-btn">Speechwriting</button>
+      <button class="filter-btn">Youth & Debate</button>
+    </div>
+  </div>
+
+  <!-- ARTICLES -->
+  <section class="articles" id="articles">
+    <div class="articles-inner">
+      <div class="section-label">Latest Writing</div>
+      <h2 class="section-title">From the Desk of Fidel Owiti.</h2>
+
+      <!-- FEATURED -->
+      <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="featured">
+        <div class="featured-img" style="background:var(--navy);"><span>🎤</span></div>
+        <div class="featured-body">
+          <div class="art-cat">Featured · Public Speaking</div>
+          <h3 class="art-title">Why Most People Never Speak Up — And What It Costs Them</h3>
+          <p class="art-excerpt">The room is never too big. The audience is never too intimidating. The real problem is the story you have been telling yourself about who gets to speak and who does not. It is time to change that story.</p>
+          <div class="art-meta">
+            <span><i class="far fa-calendar" style="margin-right:4px;"></i>Add your date</span>
+            <span><i class="far fa-clock" style="margin-right:4px;"></i>5 min read</span>
+          </div>
+          <span class="art-cta">Read on Substack <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- ARTICLE GRID - Replace href="#" with actual Substack post URLs -->
+      <div class="art-grid">
+        <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="art-card">
+          <div class="art-card-img" style="background:var(--burgundy);">🏆</div>
+          <div class="art-card-body">
+            <div class="art-cat">Leadership</div>
+            <h3 class="art-title">The Leader Who Could Not Speak Was Never Really Leading</h3>
+            <p class="art-excerpt">Communication is not a soft skill. It is the skill that makes every other skill visible.</p>
+            <div class="art-meta"><span>Add your date</span></div>
+            <span class="art-cta">Read More <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="art-card">
+          <div class="art-card-img" style="background:var(--gold);">✍️</div>
+          <div class="art-card-body">
+            <div class="art-cat">Speechwriting</div>
+            <h3 class="art-title">How to Write a Speech People Remember Years Later</h3>
+            <p class="art-excerpt">The secret is not eloquence. It is specificity. The details that feel too personal are the ones that connect universally.</p>
+            <div class="art-meta"><span>Add your date</span></div>
+            <span class="art-cta">Read More <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="art-card">
+          <div class="art-card-img" style="background:var(--navy);">🧒</div>
+          <div class="art-card-body">
+            <div class="art-cat">Children & Youth</div>
+            <h3 class="art-title">The Best Time to Teach a Child to Speak in Public is Now</h3>
+            <p class="art-excerpt">Confidence built at 10 compounds over time. Every year you wait is a year of growth your child misses.</p>
+            <div class="art-meta"><span>Add your date</span></div>
+            <span class="art-cta">Read More <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="art-card">
+          <div class="art-card-img" style="background:#2C3E50;">🎯</div>
+          <div class="art-card-body">
+            <div class="art-cat">Debate</div>
+            <h3 class="art-title">You Do Not Win Debates by Being Louder. Here is What Works.</h3>
+            <p class="art-excerpt">The most persuasive debaters speak less and listen more. Their weapon is silence and precision.</p>
+            <div class="art-meta"><span>Add your date</span></div>
+            <span class="art-cta">Read More <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="art-card">
+          <div class="art-card-img" style="background:var(--burgundy);">📈</div>
+          <div class="art-card-body">
+            <div class="art-cat">Executive Communication</div>
+            <h3 class="art-title">How East African CEOs Are Using Communication as a Growth Strategy</h3>
+            <p class="art-excerpt">The leaders winning today are not the most technically skilled. They are the ones their teams want to follow.</p>
+            <div class="art-meta"><span>Add your date</span></div>
+            <span class="art-cta">Read More <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="art-card">
+          <div class="art-card-img" style="background:var(--gold);">📚</div>
+          <div class="art-card-body">
+            <div class="art-cat">Books & Writing</div>
+            <h3 class="art-title">What Writing 26 Books in One Year Taught Me</h3>
+            <p class="art-excerpt">It was never about the books. It was about proving that done beats perfect, and that you have more to say than you think.</p>
+            <div class="art-meta"><span>Add your date</span></div>
+            <span class="art-cta">Read More <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align:center;">
+        <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="btn-navy"><i class="fas fa-newspaper"></i> Read All Articles on Substack</a>
+        <p style="font-size:12px;color:var(--gray);margin-top:12px;">To link individual articles: replace href="#" above with your Substack post URL</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMAIL CAPTURE -->
+  <section class="email-section">
+    <div class="email-inner">
+      <div class="section-label" style="color:var(--gold);">Newsletter</div>
+      <h2 class="email-title">Words That Move.<br><em>Delivered Weekly.</em></h2>
+      <p class="email-sub">Join thousands of professionals, leaders, and communicators who read Speak to Lead every week. Practical. Honest. Actionable.</p>
+      <div class="email-perks">
+        <div class="perk"><div class="perk-dot"></div>Speaking tips</div>
+        <div class="perk"><div class="perk-dot"></div>Leadership insights</div>
+        <div class="perk"><div class="perk-dot"></div>Book excerpts</div>
+        <div class="perk"><div class="perk-dot"></div>Free resources</div>
+      </div>
+      <div class="email-form">
+        <input class="email-input" type="email" placeholder="Enter your email address">
+        <button class="email-submit" onclick="window.open('https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz','_blank')">Subscribe Free</button>
+      </div>
+      <p class="email-note">You will be taken to Substack to confirm. No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section class="resources">
+    <div class="resources-inner">
+      <div class="section-label">Free Resources</div>
+      <h2 class="section-title" style="font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,42px);font-weight:900;color:var(--dark);line-height:1.1;margin-bottom:0;">Tools to Help You<br>Speak Better Today.</h2>
+      <div class="res-grid">
+        <div class="res-card">
+          <div class="res-icon">🎯</div>
+          <div class="res-title">The 5-Minute Speech Framework</div>
+          <p class="res-desc">A simple structure you can use for any speech, presentation, or talk. Used by hundreds of Speak to Lead clients across Kenya.</p>
+          <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="res-link">Download Free →</a>
+        </div>
+        <div class="res-card">
+          <div class="res-icon">🧠</div>
+          <div class="res-title">Confidence Before the Stage Checklist</div>
+          <p class="res-desc">The exact pre-speech routine Fidel gives every coaching client before a major presentation or keynote.</p>
+          <a href="https://open.substack.com/pub/speaktolead?utm_source=share&utm_medium=android&r=4otzz" target="_blank" class="res-link">Download Free →</a>
+        </div>
+        <div class="res-card">
+          <div class="res-icon">📖</div>
+          <div class="res-title">Read: ALMOST (Free Chapter)</div>
+          <p class="res-desc">The first chapter of Fidel's most read book — about the cost of waiting and the power of starting before you feel ready.</p>
+          <a href="https://selar.com/fidelowiti" target="_blank" class="res-link">Read Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <img src="logo.jpg" alt="Speak to Lead" class="footer-logo">
+          <div class="footer-brand-name">Speak to Lead</div>
+          <p class="footer-brand-sub">Helping professionals and leaders across Kenya and East Africa communicate with clarity, confidence, and impact. Founded by Fidel Owiti, Nairobi.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/fidelowiti" class="social-link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/fidel_owiti?igsh=bGVqeW1rcGl4cGY3" class="social-link instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/fidelowiti21" class="social-link facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@fidelowiti9170" class="social-link youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About Fidel</a></li>
+            <li><a href="speaking.html">Book Fidel to Speak</a></li>
+            <li><a href="blog.html">Blog &amp; Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="#" class="reveal-email-link"><span class="reveal-email">speaktolead99@gmail.com</span></a></li>
+            <li><a href="https://wa.me/254113660881" target="_blank">+254 113 660 881</a></li>
+            <li><a href="https://calendly.com/fowiti76" target="_blank">Book a Call</a></li>
+            <li><a href="https://speaktolead-onboarding.netlify.app" target="_blank">Client Intake Form</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Speak to Lead · Nairobi, Kenya</span>
+        <div class="footer-palette">
+          <div class="palette-dot" style="background:#1B2F5E;"></div>
+          <div class="palette-dot" style="background:#C9A84C;"></div>
+          <div class="palette-dot" style="background:#800000;"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTION BUTTONS -->
+  <!-- Back to top — left side -->
+  <button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+  <!-- Action stack — right side -->
+  <div class="fab-stack">
+    <a href="https://wa.me/254113660881" class="fab fab-whatsapp" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="fab-tip">WhatsApp</span>
+    </a>
+    <a href="https://speaktolead-onboarding.netlify.app" class="fab fab-form" target="_blank" title="Client Intake Form">
+      <i class="fas fa-file-alt"></i>
+      <span class="fab-tip">Apply Now</span>
+    </a>
+    <a href="https://calendly.com/fowiti76" class="fab fab-calendar" target="_blank" title="Book a Call">
+      <i class="fas fa-calendar-check"></i>
+      <span class="fab-tip">Book a Call</span>
+    </a>
+  </div>
+
+  <script>
+    // Filter buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+    // Scroll progress + back to top
+    window.addEventListener('scroll', () => {
+      const st = document.documentElement.scrollTop;
+      const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const bar = document.getElementById('progressBar');
+      const btn = document.getElementById('backTop');
+      if (bar) bar.style.width = (st / h * 100) + '%';
+      if (btn) btn.style.opacity = st > 400 ? '1' : '0';
+    });
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("open");
+      document.getElementById("hamburger").classList.toggle("open");
+    }
+    document.querySelectorAll(".mobile-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("mobileMenu").classList.remove("open");
+        document.getElementById("hamburger").classList.remove("open");
+      });
+    });
+  
